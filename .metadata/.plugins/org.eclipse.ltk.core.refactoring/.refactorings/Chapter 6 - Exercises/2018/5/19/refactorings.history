@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;section65.MaxHeap.max_heapify(...)&apos; to &apos;maxHeapify&apos;&#x0D;&#x0A;- Original project: &apos;Chapter 6 - Exercises&apos;&#x0D;&#x0A;- Original element: &apos;section65.MaxHeap.max_heapify(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;section65.MaxHeap.maxHeapify(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;max_heapify&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;section65{MaxHeap.java[MaxHeap~max_heapify~I" name="maxHeapify" references="true" stamp="1525613200054" version="1.0"/>
+</session>

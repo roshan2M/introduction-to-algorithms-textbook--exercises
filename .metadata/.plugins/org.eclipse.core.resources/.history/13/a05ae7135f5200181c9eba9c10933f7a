@@ -1,0 +1,13 @@
+package section71;
+
+public class Quicksort {
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void quicksort(int[] a, int p, int r) {
+		
+	}
+
+}

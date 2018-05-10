@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;Chapter 6 - Exercises/src/section65&apos;&#x0D;&#x0A;- Original project: &apos;Chapter 6 - Exercises&apos;&#x0D;&#x0A;- Destination element: &apos;Chapter 6 - Exercises/src/section65&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     section64.PriorityQueue.java&#x0D;&#x0A;     section64.Heap.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="/src&lt;section65" element1="/src&lt;section64{PriorityQueue.java" element2="/src&lt;section64{Heap.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1525115319578" units="2" version="1.0"/>
+</session>

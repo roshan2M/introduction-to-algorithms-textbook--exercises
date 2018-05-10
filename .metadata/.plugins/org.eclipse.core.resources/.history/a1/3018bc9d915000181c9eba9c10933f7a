@@ -1,0 +1,48 @@
+package section65;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Heap {
+	
+	int size;
+	int maxSize;
+	int[] array;
+	
+	public Heap() {
+		size = 0;
+		maxSize = 1;
+		array = new int[maxSize];
+	}
+	
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	
+	public boolean isFull() {
+		return size == maxSize;
+	}
+	
+	public int parent(int i) {
+		return array[(i - 1)/2];
+	}
+	
+	// Returns k-th child of i-th element
+	public int kChild(int i, int k) {
+		return array[2*i + k];
+	}
+	
+	public void insert(int i) {
+		if (isFull()) {
+			maxSize *= 2;
+			array = Arrays.copyOf(array, maxSize);
+		}
+		array[size++] = i;
+		max_heapify(size);
+	}
+	
+	public void max_heapify(int i) {
+		
+	}
+
+}

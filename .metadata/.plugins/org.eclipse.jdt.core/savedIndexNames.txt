@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+D:\University\Programming Texts\Introduction to Algorithms\Chapter 2 - Exercises\.metadata\.plugins\org.eclipse.jdt.core
+1196834111.index
+3887325922.index
+2280609705.index
+1517915692.index

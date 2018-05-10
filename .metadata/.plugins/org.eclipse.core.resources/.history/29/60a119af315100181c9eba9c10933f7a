@@ -1,0 +1,121 @@
+package section65;
+
+import java.util.Arrays;
+
+public class MaxHeap {
+	
+	int size;
+	int maxSize;
+	int[] array;
+	
+	/** Public Methods **/
+	
+	public MaxHeap() {
+		size = 0;
+		maxSize = 1;
+		array = new int[maxSize];
+	}
+	
+	public boolean isEmpty() {
+		return size == 0;
+	}
+	
+	public boolean isFull() {
+		return size == maxSize;
+	}
+	
+	public int parent(int i) {
+		return array[(i - 1)/2];
+	}
+	
+	// Returns k-th child of i-th element in heap
+	public int kChild(int i, int k) {
+		return array[2*i + k];
+	}
+	
+	public void insert(int i) {
+		if (isFull()) {
+			maxSize *= 2;
+			array = Arrays.copyOf(array, maxSize);
+		}
+		size++;
+		array[size-1] = i;
+		maxHeapify(size);
+	}
+	
+	// Removes top element from the heap
+	public void remove() {
+		size--;
+		swap(0, size);
+		maxHeapify(0);
+	}
+	
+	// Removes element i from heap if exists
+	public void remove(int i) {
+		removeAtIndex(i, 0);
+	}
+	
+	public int getMax() throws IndexOutOfBoundsException {
+		if (isEmpty()) throw new IndexOutOfBoundsException();
+		return array[0];
+	}
+	
+	public void printMaxHeap() {
+		System.out.println(Arrays.toString(array));
+	}
+	
+	/** Private Methods **/
+	
+	private void maxHeapify(int i) {
+		int l = i*2 + 1;
+		int r = l + 1;
+		int largest = i;
+		
+		// Change array[l/r] > array[largest] to array[l/r] < array[largest] for MinHeap
+		if (l < size && array[l] > array[largest]) largest = l;
+		if (r < size && array[r] > array[largest]) largest = r;
+		if (largest != i) {
+			swap(i, largest);
+			maxHeapify(largest);
+		}
+	}
+	
+	private void removeAtIndex(int i, int index) {
+		if (index >= size || i > array[index]) return;
+		if (i == array[index]) {
+			swap(0, index);
+			remove(0);
+		} else {
+			removeAtIndex(i, 2*index + 1);
+			removeAtIndex(i, 2*index + 2);
+		}
+	}
+
+	private void swap(int a, int b) {
+		int temp = array[a];
+		array[a] = array[b];
+		array[b] = temp;
+	}
+
+}
+
+
+class MaxHeapTest {
+	
+	public static void main(String[] args) {
+		MaxHeap mh = new MaxHeap();
+		assert(mh.isEmpty());
+		mh.insert(5);
+		mh.insert(3);
+		mh.insert(7);
+		mh.printMaxHeap();
+		assert(mh.getMax() == 7);
+		mh.remove();
+		mh.printMaxHeap();
+		assert(mh.getMax() == 5);
+		mh.remove(3);
+		mh.printMaxHeap();
+		assert(mh.getMax() == 5);
+	}
+	
+}
