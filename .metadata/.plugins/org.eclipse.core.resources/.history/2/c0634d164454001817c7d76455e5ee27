@@ -59,7 +59,6 @@ public class MaxHeap {
 		maxHeapify(0);
 	}
 	
-	// TODO: Not working properly
 	// Removes element i from heap if exists
 	public void remove(int i) {
 		removeAtIndex(i, 0);

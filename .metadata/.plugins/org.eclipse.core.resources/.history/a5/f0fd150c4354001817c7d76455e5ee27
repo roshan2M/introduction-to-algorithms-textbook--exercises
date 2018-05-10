@@ -40,7 +40,7 @@ public class MaxHeap {
 			array = Arrays.copyOf(array, maxSize);
 		}
 		
-		// Swaps element with parent until element is smaller than the parent
+		// Swaps element with parent until its smaller than the parent
 		int index = size;
 		int parentIndex = (index - 1)/2;
 		while (index > 0 && element > array[parentIndex]) {
@@ -59,7 +59,6 @@ public class MaxHeap {
 		maxHeapify(0);
 	}
 	
-	// TODO: Not working properly
 	// Removes element i from heap if exists
 	public void remove(int i) {
 		removeAtIndex(i, 0);
@@ -128,11 +127,9 @@ class MaxHeapTest {
 		assert(mh.getMax() == 7);
 		mh.remove();
 		mh.printMaxHeap();
-		System.out.println(mh.getSize());
 		assert(mh.getMax() == 5);
 		mh.remove(3);
 		mh.printMaxHeap();
-		System.out.println(mh.getSize());
 		assert(mh.getMax() == 5);
 	}
 	
