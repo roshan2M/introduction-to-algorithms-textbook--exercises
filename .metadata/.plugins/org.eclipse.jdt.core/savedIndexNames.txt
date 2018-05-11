@@ -1,5 +1,21 @@
-INDEX VERSION 1.130+D:\University\Programming Texts\Introduction to Algorithms\Chapter 2 - Exercises\.metadata\.plugins\org.eclipse.jdt.core
-1196834111.index
-3887325922.index
-2280609705.index
-1517915692.index
+INDEX VERSION 1.130+/Users/roshan/Documents/Personal Projects/introduction-to-algorithms-textbook--exercises/.metadata/.plugins/org.eclipse.jdt.core
+1809548371.index
+2723170652.index
+904770791.index
+4061796439.index
+2500356922.index
+4101167580.index
+4190343708.index
+1241710292.index
+2284312617.index
+1144384042.index
+1653335996.index
+1654975474.index
+2254170629.index
+3766893981.index
+1437663660.index
+338626639.index
+1271342938.index
+3459828603.index
+288112982.index
+941210201.index
