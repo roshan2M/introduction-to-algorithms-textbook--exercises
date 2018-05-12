@@ -1,0 +1,20 @@
+package section71;
+
+import section71.Quicksort;
+
+public class TailRecursiveQuicksort {
+	
+	public static void main(String[] args) {
+		int[] array = {-1, 9, 5, 2, 8, -3};
+		tailRecursiveQuicksort(array, 0, array.length-1);
+	}
+	
+	public static void tailRecursiveQuicksort(int[] a, int start, int end) {
+		while (start < end) {
+			int mid = Quicksort.partition(a, start, end);
+			tailRecursiveQuicksort(a, start, mid - 1); // Sorting the left subarray
+			start = mid + 1;
+		}
+	}
+
+}
