@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<<<<<<< HEAD
 <listEntry value="/Chapter 7 - Exercises/src/exercises/MedianOfThreePartition.java"/>
+=======
+<listEntry value="/Chapter 7 - Exercises/src/section71/MedianOfThreePartition.java"/>
+>>>>>>> 6dcee90eb380cc1b194d3cf7d730a4df0a0a4f10
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
+<<<<<<< HEAD
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="exercises.MedianOfThreePartition"/>
+=======
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="section71.MedianOfThreePartition"/>
+>>>>>>> 6dcee90eb380cc1b194d3cf7d730a4df0a0a4f10
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Chapter 7 - Exercises"/>
 </launchConfiguration>

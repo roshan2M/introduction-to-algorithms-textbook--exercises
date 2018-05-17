@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.130+/Users/roshan/Documents/Personal Projects/introduction-to-algorithms-textbook--exercises/.metadata/.plugins/org.eclipse.jdt.core
 1653335996.index
 4190343708.index
@@ -20,3 +21,11 @@ INDEX VERSION 1.130+/Users/roshan/Documents/Personal Projects/introduction-to-al
 4101167580.index
 1271342938.index
 3766893981.index
+=======
+INDEX VERSION 1.130+D:\GitHub\Repositories\introduction-to-algorithms-textbook--exercises\.metadata\.plugins\org.eclipse.jdt.core
+1196834111.index
+3887325922.index
+2280609705.index
+1517915692.index
+2097765145.index
+>>>>>>> 6dcee90eb380cc1b194d3cf7d730a4df0a0a4f10
