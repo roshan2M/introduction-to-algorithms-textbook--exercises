@@ -1,0 +1,14 @@
+package exercises;
+
+public class FuzzyQuicksort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void fuzzySorting(int[] a) {
+		
+	}
+
+}

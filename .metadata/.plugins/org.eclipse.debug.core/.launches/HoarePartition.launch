@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Chapter 7 - Exercises/src/section71/HoarePartition.java"/>
+<listEntry value="/Chapter 7 - Exercises/src/exercises/HoarePartition.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="section71.HoarePartition"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="exercises.HoarePartition"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Chapter 7 - Exercises"/>
 </launchConfiguration>

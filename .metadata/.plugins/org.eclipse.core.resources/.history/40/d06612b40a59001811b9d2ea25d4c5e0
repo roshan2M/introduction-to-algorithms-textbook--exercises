@@ -1,0 +1,64 @@
+package exercises;
+
+import section71.Quicksort;
+
+public class FuzzyQuicksort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void fuzzyQuicksort(Interval[] a, int p, int r) {
+		if (p < r) {
+			int[] indices = fuzzyPartition(a, p, r);
+			fuzzyQuicksort(a, p, indices[0]);
+			fuzzyQuicksort(a, indices[1] + 1, indices[2]);
+			fuzzyQuicksort(a, indices[3], r);
+		}
+	}
+
+	public static int[] fuzzyPartition(Interval[] a, int p, int r) {
+		int pivot = (int) Math.round(Math.random() * (r - p) + p);
+		int left = a[pivot].a;
+		int right = a[pivot].b;
+		fuzzySwap(a, pivot, r);
+		
+		int i = p;
+		for (int j = p; j < r; j++) {
+			if (a[j].a <= left) {
+				fuzzySwap(a, i, j);
+				i++;
+			}
+			fuzzySwap(a, i, r);
+		}
+		int y = i;
+		
+		i = p;
+		for (int j = p; j < y; j++) {
+			if (a[j].b < left) {
+				fuzzySwap(a, i, j);
+				i++;
+			}
+		}
+		
+		return null;
+	}
+	
+	private static void fuzzySwap(Interval[] a, int x, int y) {
+		Interval temp = a[x];
+		a[x] = a[y];
+		a[y] = temp;
+	}
+
+}
+
+class Interval {
+	int a;
+	int b;
+	
+	public Interval(int a, int b) {
+		this.a = a;
+		this.b = b;
+	}
+}
