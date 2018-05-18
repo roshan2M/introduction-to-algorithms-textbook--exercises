@@ -19,7 +19,6 @@ public class CountingSort {
 		int[] b = new int[n];
 		int[] count = new int[k + 1];
 		
-		for (int i = 0; i <= k; i++) count[i] = 0;
 		for (int i = 0; i < n; i++) count[a[i]]++;
 		for (int i = 1; i <= k; i++) count[i] += count[i - 1];
 		for (int i = 0; i < n; i++) {
